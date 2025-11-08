@@ -23,6 +23,9 @@ const Nav = () => {
             <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">
               About
             </Link>
+            <Link to="/destinations" className="text-gray-700 hover:text-blue-600 transition duration-300">
+              Destinations
+            </Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition duration-300">
               Contact
             </Link>
