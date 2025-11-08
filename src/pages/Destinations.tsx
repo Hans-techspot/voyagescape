@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Destinations = () => {
   const destinations = [
@@ -57,9 +58,15 @@ const Destinations = () => {
                   <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
                     {dest.name}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     {dest.description}
                   </p>
+                  <Link
+                    to="/payments"
+                    className="inline-block w-full bg-blue-600 text-white text-center py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                  >
+                    Book Now
+                  </Link>
                 </div>
               </motion.div>
             ))}
